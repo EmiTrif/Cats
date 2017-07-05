@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="cats">
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+ 
+  <script type="text/javascript">
+    function cats (name, location, number){
+      this.name=name;
+      this.location=location;
+      this.number=number;
+      this.status= endangderedStatus;
+    }
+    
+    function endangderedStatus(){
+      var stat;
+      if ( this.number < 30000){stat= "extremly endangered";}
+      else if (30000 < this.number & this.number < 300000){ stat= "endangered";}
+      else if (this.number > 300000){stat="not endangered"};
+      return(stat);
+    }  
+    var tiger = new cats("Panthera tigris","Asia", 3200);
+    var lion = new cats("Panthera leo", "Asia, Africa", 36000);
+    var cat = new cats("Felis catus", "all continents", 600000000)
+  </script>
+  
+  <title>Cats</title>
+</head>
+  
+<body>
+ 
+</body>
+</html>
